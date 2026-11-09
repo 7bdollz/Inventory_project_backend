@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --watch --env-file=.env src/app.js",
+    "dev": "node --watch --env-file=.env src/app.js",
     "db:init": "node --env-file=.env src/database/script.js",
     "db:import:rawg": "node --env-file=.env src/database/import-rawg.js",
-    "db:import:playstation": "node --env-file=.env src/database/import-playstation.js"
+    "db:import:playstation": "node --env-file=.env src/database/import-playstation.js",
+    "start":"node src/app.js"
   },
   "keywords": [],
   "type": "module",
