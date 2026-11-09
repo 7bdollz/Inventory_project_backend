@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>
+        My Game Inventory
+    </h1>
+    <nav>
+        <form action="/form" method="get">
+            <button type="submit">Add a game</button>
+        </form>
+    </nav>
+    <div>
+        <h2>
+            all available games
+        </h2>
+        <ul>
+            <%if(games){%>
+                <%games.forEach((game)=>{%>
+                    <li>
+                        <%=game.title%>
+                    </li>
+                <%})%>
+            <%}%>
+        </ul>
+    </div>
+</body>
+</html>
